@@ -6,5 +6,6 @@ namespace VisitorPatternExample.Console.Interfaces
 {
     public interface IExpression
     {
+        void Accept(IExpressionVisitor visitor);
     }
 }

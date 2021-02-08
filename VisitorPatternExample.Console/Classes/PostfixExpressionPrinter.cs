@@ -21,12 +21,18 @@ namespace VisitorPatternExample.Console.Classes
 
         public void Visit(Addition addition)
         {
-
+            addition.Left.Accept(this);
+            sb.Append(" ");
+            addition.Right.Accept(this);
+            sb.Append(" +");
         }
 
         public void Visit(Subtraction subtraction)
         {
-
+            subtraction.Left.Accept(this);
+            sb.Append(" ");
+            subtraction.Right.Accept(this);
+            sb.Append(" -");
         }
 
     }

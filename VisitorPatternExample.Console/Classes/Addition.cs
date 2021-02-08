@@ -18,6 +18,7 @@ namespace VisitorPatternExample.Console.Classes
 
         public void Accept(IExpressionVisitor visitor)
         {
+            visitor.Visit(this);
         }
     }
 }

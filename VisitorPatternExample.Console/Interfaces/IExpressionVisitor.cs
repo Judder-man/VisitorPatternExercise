@@ -8,5 +8,7 @@ namespace VisitorPatternExample.Console.Interfaces
     public interface IExpressionVisitor
     {
         void Visit(Literal literal);
+        void Visit(Addition addition);
+        void Visit(Subtraction subtraction);
     }
 }
